@@ -1,3 +1,5 @@
 <h1 align="center">
-![Home](home.png)
+
+<img alt="Home" title="Home" src="home.png">
+
 </h1>

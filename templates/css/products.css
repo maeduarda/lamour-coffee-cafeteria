@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #DDCDCD;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+
+}
+header ul li {
+    list-style: none;
+}
+
+header ul li a{
+ display: inline-block;
+ color: #333;
+ margin-left: 150px;
+ margin-top: 10px;
+ text-decoration: none;
+}
+
+section h1 {
+    position: absolute;
+    width: 199px;
+    height: 80px;
+    left: calc(50% - 295px/2 - 45.5px);
+    top: calc(50% - 270px/2 - 183.5px);
+    color:#EB5757;
+    font-weight: bolder;
+}
+
+
+
+div .iced img {
+    position: absolute;
+    height: 300px;
+    left: 55px;
+    top: 140px;
+
+  
+}
+
+div .iced h5{
+    position: absolute;
+    height: 10px;
+    left: 95px;
+    top: 455px;
+
+    font-weight: bolder;
+    color:#EB5757;
+
+
+}
+
+div .iced h6 {
+    position: absolute;
+    height: 10px;
+    left: 125px;
+    top: 496px;
+
+    font-weight: bolder;
+
+
+}
+
+div .iced span {
+    position: absolute;
+    height: 10px;
+    left: 100px;
+    top: 536px;
+
+    font-weight: bolder;
+
+}
+
+div .iced button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 53px;
+    top: 565px;
+
+    background: #796871;
+    border-radius: 8px;
+
+    
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+
+div .caramel img {
+    position: absolute;
+    width: 217;
+    height: 300px;
+    left: 360px;
+    top: 140px;
+
+}
+
+div .caramel h5{
+    position: absolute;
+    height: 10px;
+    left: 379px;
+    top: 455px;
+
+    font-weight: bolder;
+    color:#EB5757;
+
+
+}
+
+div .caramel h6 {
+
+    position: absolute;
+    height: 10px;
+    left: 440px;
+    top: 496px;
+
+    font-weight: bolder;
+
+}
+
+div .caramel span {
+
+    position: absolute;
+    height: 10px;
+    left: 418px;
+    top: 536px;
+
+    font-weight: bolder;
+
+}
+
+div .caramel button {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 370px;
+    top: 565px;
+
+    background: #796871;
+    border-radius: 8px;
+
+    
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+
+
+}
+
+div .mocha img{
+
+    position: absolute;
+    width: 217;
+    height: 300px;
+    left: 700px;
+    top: 140px;
+
+}
+
+div .mocha h5 {
+
+    position: absolute;
+    height: 10px;
+    left: 747px;
+    top: 455px;
+
+    font-weight: bolder;
+    color:#EB5757;
+
+
+}
+
+div .mocha h6 {
+
+    position: absolute;
+    height: 10px;
+    left: 785px;
+    top: 496px;
+
+    font-weight: bolder;
+
+}
+
+div .mocha span {
+
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    left: 762px;
+    top: 536px;
+    float:right; 
+    font-weight: bolder;
+
+}
+
+div .mocha button {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 710px;
+    top: 565px;
+
+    background: #796871;
+    border-radius: 8px;
+
+    
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+div .double img {
+
+    position: absolute;
+    width: 217;
+    height: 300px;
+    left: 1020px;
+    top: 140px;
+
+}
+
+div .double h5 {
+
+    position: absolute;
+    height: 10px;
+    left: 1032px;
+    top: 455px;
+
+    font-weight: bolder;
+    color:#EB5757;
+
+
+}
+
+div .double h6 {
+
+    position: absolute;
+    height: 10px;
+    left: 1099px;
+    top: 496px;
+
+    font-weight: bolder;
+
+}
+
+div .double span {
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    left: 1080px;
+    top: 536px;
+
+    font-weight: bolder;
+
+}
+
+div .double button {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 1030px;
+    top: 565px;
+
+    background: #796871;
+    border-radius: 8px;
+
+    
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+div .row button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 53px;
+    top: 565px;
+
+    background: linear-gradient(45deg, #EB5757, #69073d);
+    border-radius: 8px;
+
+    
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+   
+}
+/*
+display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 53px;
+    top: 565px;
+
+background: linear-gradient(45deg, #EB5757, #69073d);
+transform: scaleX(0);
+transition: all .3s ease-in-out;
+transform-origin: left;
+
+font-size: 20px;
+font-weight: bolder;
+color: white;
+
+
+section h1 {
+    position: absolute;
+    width: 199px;
+    height: 80px;
+    left: calc(50% - 199px/2 - 45.5px);
+    top: calc(50% - 110px/2 - 183.5px);
+    color:#EB5757;
+    font-weight: bolder;
+}
+*/
+section a {
+    position: absolute;
+    padding: 20px 100px;
+    color: black;
+}
+.Iced {
+    position: absolute;
+    height: 413px;
+    left: 35px;
+    top: 200px;
+}
+
+.Caramel {
+    position: absolute;
+    width: 217;
+    height: 413px;
+    left: 300px;
+    top: 200px;
+}
+
+.Mocha {
+    position: absolute;
+    height: 413px;
+    left: 650px;
+    top: 200px;
+}
+
+.Double-espresso {
+    position: absolute;
+    height: 413px;
+    left: 1020px;
+    top: 200px;
+}
+
+.iced-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 53px;
+    top: 565px;
+
+    background: #201F1F;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 20px;
+}
+
+
+.frappe-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 322px;
+    top: 565px;
+
+    background: #201F1F;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 20px;
+}
+
+.mocha-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 670px;
+    top: 565px;
+
+    background: #201F1F;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 20px;
+}
+
+.double-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 62px;
+
+    position: absolute;
+    width: 223px;
+    height: 68px;
+    left: 1040px;
+    top: 565px;
+
+    background: #201F1F;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 20px;
+} 
+
+.span_iced{
+    position: absolute;
+    left: 70px;
+    top: 530px;
+    /*background-color: #fff;*/
+}
+.span_caramel{
+    position: absolute;
+    left: 420px;
+    top: 530px;
+   /* background-color: #fff;*/
+}
+
+.span_mocha{
+    position: absolute;
+    right: 570px;
+    top: 530px;
+    /*background-color: #fff;*/
+}
+.span_double{
+    position: absolute;
+    right: 200px;
+    top: 530px;
+    /*background-color: #fff;*/
+}

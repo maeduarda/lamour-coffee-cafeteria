@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  <header>
+    <a href="/home">Volte à página inicial</a>
+  </header>
+    <main class="container">
+       
+        <h3>Faça o login para ver nossos produtos.
+            <i class="fas fa-mug-hot"></i>
+        </h3>
+
+        <br>
+        <h2>Login</h2>
+        <form action="/login" method = "POST">
+            <div class="input-field">
+                <input type="email" name="email" id="email" placeholder="Insira seu email">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Insira sua senha">
+                <div class="underline"></div>
+            </div>
+
+            <input type="submit" value="Continue">
+        </form>
+       
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <for| message, index|of = data.success_message>
+        <script>M.toast({html: '${message}', 
+              classes: '#b71c1c green darken-4'
+        })</script> 
+      </for>
+    <for| message, index|of = data.error_message>
+      <script>M.toast({html: '${message}', 
+            classes: '#b71c1c red darken-4'
+      })</script> 
+    </for> 
+     
+</body>
+
+</html>

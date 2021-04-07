@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="../css/usuarios.css">
+</head>
+<body>
+    <section>
+        <a  href="/">Volte à página inicial</a>
+    </section>
+    <div class = 'container'>
+    <h1>Usuários</h1>
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Email</th> 
+            <th>Senha</th>
+            <th>Nome</th>
+        </thead>
+        <for|user, index| of=data.results>
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.email}</td>
+                <td>${user.password}</td>
+                <td>${user.nome}</td>
+                <td>
+                    <a style="margin-right: 10px;" href="/singIn/${user.id}" class="btn-floating btn-medium waves-effect waves-light linen white"><i class="material-icons" style="color:#EB5757;">edit</i></a>
+                    
+                    <a href="/users/delete/${user.id}" class="btn-floating btn-medium waves-effect waves-light white"><i class="material-icons"  style="color:#EB5757;;">delete</i></a>
+                </td>
+            </tr>
+        </for> 
+    </table> 
+    </div>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"/>
+      <for| message, index|of = data.error_message>
+        <script>M.toast({html: '${message}', 
+              classes: '#b71c1c red darken-4'
+        })</script> 
+      </for>
+      <for| message, index|of = data.success_message>
+        <script>M.toast({html: '${message}', 
+              classes: '#b71c1c green darken-4'
+        })</script> 
+      </for>
+</body>
+</html>

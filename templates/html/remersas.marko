@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas Remersas</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    
+    <main>
+        <h1>Insira os dados da remersa de produtos</h1>
+        
+        <form action="/remersas" method="POST">
+         <input type = 'hidden' name = 'id' value='${data.id}'>
+            <label for="name">
+                <span>Nome do tipo de café</span>
+                <input type="text" id="name" name="cafe" value="${data.cafe}">
+            </label>
+            <label for="quantity">
+            <span>Quantidade de produtos</span>
+            <input type="number" id="quantity" name="quantidade" min="50" value="${data.quantidade}">
+            </label>
+            <input type="submit" value="Cadastrar" id="button">
+        </form>
+    </main>
+    <section class="images">
+        <img src="/icons/xicara.png" alt="Xicara">
+        <div class="circle"></div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <for| message, index|of = data.error_message>
+      <script>M.toast({html: '${message}', 
+            classes: '#b71c1c red darken-4'
+      })</script> 
+    </for>
+
+    <for| message, index|of = data.success_message>
+        <script>M.toast({html: '${message}', 
+              classes: '#b71c1c green darken-4'
+        })</script> 
+      </for>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <header>
+        <ul>
+                  
+            <li><a href="/aboutUs">Sobre nós</a></li>
+            <li><a href="/singIn">Cadastre-se aqui</a></li>
+            <li><a href="/login">Produtos</a></li>
+            <li><a href="/contacts">Contatos</a></li>
+            <li><a href="/">Volte à página inicial</a></li>
+           
+        </ul>
+    </header>
+   
+    <section>
+      
+        <h1>Produtos</h1>
+    </section>
+    <div>
+        <div class="coffes">
+
+            <div class="iced">
+             <img src="../iconesvalor/iced.png" alt="Iced Coffee">
+              <h5>Iced Coffee</h5>
+              <h6>R$ 25,00</h6>
+              <span class="span_iced">Quantidade: ${data.results[1].quantidade}</span>
+              <a href= "/comprar/2"><button> Comprar</button></a>
+            </div>
+
+            <div class="caramel">
+                <img src="../iconesvalor/caramel.png" alt="Caramel">
+                <h5>Caramel Frappe</h5>
+                <h6>R$ 16,90</h6>
+                <span class="span_caramel">Quantidade: ${data.results[2].quantidade}</span>
+                <a href = "/comprar/3"><button> Comprar </button></a>
+            </div>
+
+            <div class="mocha">
+                <img src="../iconesvalor/mocha.png" alt="Mocha">
+                <h5>Mocha Late</h5>
+                <h6>R$ 14,90</h6>
+                <span class="span_mocha">Quantidade: ${data.results[0].quantidade} </span>
+                <a href = "/comprar/4"><button> Comprar </button></a>
+               
+            </div>
+      
+            <div class="double">
+                <img src="../iconesvalor/double.png" alt="Double">
+                <h5>Double Espresso</h5>
+                <h6>R$ 20,90</h6>
+                <span class="span_double">Quantidade: ${data.results[3].quantidade}</span>
+                <a href = "/comprar/5"><button> Comprar </button></a>
+               
+              </div>
+
+          </div>
+                
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <for| message, index|of = data.error_message>
+        <script>M.toast({html: '${message}', 
+              classes: '#b71c1c red darken-4'
+        })</script> 
+      </for>
+      <for| message, index|of = data.success_message>
+        <script>M.toast({html: '${message}', 
+              classes: '#b71c1c green darken-4'
+        })</script> 
+      </for>
+</body>
+
+</html>

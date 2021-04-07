@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+
+  <section>
+    <header>
+        <a href="" class="logo"><img src="/icons/logo.png"></a>
+            <ul>
+                <li><a href="/aboutUs">Sobre nós</a></li>
+                <li><a href="/singIn">Cadastre-se aqui</a></li>
+                <li><a href="/login">Produtos</a></li>
+                <li><a href="/contacts">Contatos</a></li>
+            </ul>
+    </header>
+  </section>
+    
+    <main>
+        <h1>Criar conta</h1>
+        
+
+        <form action="/singin" method="POST">
+         <input type = 'hidden' name = 'id' value='${data.id}'>
+            <label for="name">
+                <span>Nome</span>
+                <input type="text" id="name" name="nome" value="${data.nome}">
+            </label>
+
+            <label for="email">
+                <span>E-mail</span>
+                <input type="email" id="email" name="email" value = "${data.email}">
+            </label>
+
+            <label for="password">
+                <span>Senha</span>
+                <input type="password" id="password" name="password" value = "${data.password}">
+            </label>
+
+            <input type="submit" value="Cadastrar" id="button">
+        </form>
+    </main>
+    <section class="images">
+        <img src="/icons/xicara.png" alt="Xicara">
+        <div class="circle"></div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <for| message, index|of = data.error_message>
+      <script>M.toast({html: '${message}', 
+            classes: '#b71c1c red darken-4'
+      })</script> 
+    </for>
+
+    <for| message, index|of = data.success_message>
+        <script>M.toast({html: '${message}', 
+              classes: '#b71c1c green darken-4'
+        })</script> 
+      </for>
+</body>
+
+</html>

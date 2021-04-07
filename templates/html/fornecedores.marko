@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja nosso Fornecedor</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="../css/fornecedores.css">
+</head>
+<body>
+    <div class = 'container'>
+    <header>
+          <a href="/">Volte à página inicial</a>
+                
+      </header>
+    <h1>Estoques</h1>
+      <a href='/remersas' class="btn-floating btn-large waves-effect  waves-light white"><i class="material-icons" style="color:#EB5757;">add</i></a> 
+    <table>
+        <thead>
+            <th>id</th>
+            <th>Tipo do Café</th> 
+            <th>Quantidade em estoque</th>
+        </thead>
+        <for|cafe, index| of=data.results>
+            <tr>
+                <td>${cafe.id}</td>
+                <td>${cafe.cafe}</td>
+                <td>${cafe.quantidade}</td>
+                <td>
+                    <a style="margin-right: 10px;" href="/remersas/${cafe.id}" class="btn-floating btn-medium waves-effect waves-light linen white"><i class="material-icons" style="color:#EB5757;">edit</i></a>
+                        
+                    <a href="/fornecedores/delete/${cafe.id}" class="btn-floating btn-medium waves-effect waves-light white"><i class="material-icons"  style="color:#EB5757;;">delete</i></a>
+                </td>
+            </tr>
+        </for> 
+    </table> 
+    </div>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"/>
+      <for| message, index|of = data.error_message>
+        <script>M.toast({html: '${message}', 
+              classes: '#b71c1c red darken-4'
+        })</script> 
+      </for>
+      <for| message, index|of = data.success_message>
+        <script>M.toast({html: '${message}', 
+              classes: '#b71c1c green darken-4'
+        })</script> 
+      </for>
+</body>
+</html>

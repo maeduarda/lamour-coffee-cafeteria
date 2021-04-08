@@ -26,7 +26,6 @@ Siga os passos abaixo
 $ npm
 
 # Start the project
-#ou
 $ npm start
 ```
 

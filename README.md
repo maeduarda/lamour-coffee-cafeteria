@@ -39,7 +39,7 @@ $ npm
 $ npm start
 ```
 
-<p> Abra [http://localhost:3333](http://localhost:3333) com seu navegador para ver o resultado. </p>
+Abra [http://localhost:3333](http://localhost:3333) com seu navegador para ver o resultado.
 
 ---
 <p align="center">Criado com 💜 por Maria Eduarda</p>

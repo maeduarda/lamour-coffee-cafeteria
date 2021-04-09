@@ -7,11 +7,12 @@
 
 Esse projeto foi desenvolvido durante a cadeira de Projeto e prática, oferecida pelo curso de Informática para Internet - IFPE , durante Março 18-31, 2021. 
 
-## 🧪 Description
+## ✏️ 
+Description
 
 A Lamour Coffee é uma cafeteria virtual, direcionada para todos os amantes de café que gostam de facilidade e praticidade na hora de comprar o seu café favorito
 
-## Tecnologias usadas
+## 🧪 Tecnologias usadas
 
 Esse projeto foi desenvolvido usando as seguintes tecnologias
 
